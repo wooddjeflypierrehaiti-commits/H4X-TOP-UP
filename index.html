@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-<html lang="En">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>H4X TOP UP</title>
+<title>H4X Top Up</title>
 
 <style>
 body{
     font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
 .box{
-    background: #222;
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
+    background:#222;
+    max-width:450px;
+    margin:auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+h1{
+    color:#ff9800;
 }
 
 input, select, button{
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    box-sizing: border-box;
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
 }
 
 button{
-    background: #ff9800;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+    background:#ff9800;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
 }
 
 button:hover{
-    opacity: 0.9;
+    background:#e68900;
+}
+
+.footer{
+    margin-top:20px;
+    color:#aaa;
+    font-size:14px;
 }
 </style>
 </head>
@@ -49,17 +60,36 @@ button:hover{
 <div class="box">
     <h1>🔥 H4X TOP UP</h1>
 
-    <input type="text" placeholder="UID Free Fire">
+    <input type="text" placeholder="Enter Free Fire UID">
 
     <select>
-        <option>100 Diamants</option>
-        <option>310 Diamants</option>
-        <option>520 Diamants</option>
-        <option>1060 Diamants</option>
+        <option>100 Diamonds</option>
+        <option>210 Diamonds</option>
+        <option>310 Diamonds</option>
+        <option>520 Diamonds</option>
+        <option>1,060 Diamonds</option>
+        <option>2,180 Diamonds</option>
+        <option>5,600 Diamonds</option>
+        <option>Weekly Membership</option>
+        <option>Monthly Membership</option>
+        <option>Level Up Pass</option>
     </select>
 
-    <button>RECHARGER</button>
+    <button onclick="topup()">TOP UP NOW</button>
+
+    <p id="result"></p>
 </div>
 
+<div class="footer">
+    © 2026 H4X Top Up
+</div>
+
+<script>
+function topup(){
+    document.getElementById("result").innerHTML =
+    "✅ Request submitted successfully!";
+}
+</script>
+
 </body>
-</html>
+    </html>
